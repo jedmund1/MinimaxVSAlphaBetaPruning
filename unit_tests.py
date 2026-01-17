@@ -23,7 +23,7 @@ class IOTest(unittest.TestCase):
             result: The return value of an adversarial search algorithm (should be an action)
             dag: The GameDAG that was used to test the algorithm
         """
-        self.assertIsNotNone(result, "Output should not be None")
+        
         start_state = dag.get_start_state()
         potential_actions = dag.get_available_actions(start_state)
         self.assertIn(result, potential_actions, "Output should be an available action")

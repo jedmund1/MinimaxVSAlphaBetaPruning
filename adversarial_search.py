@@ -30,7 +30,7 @@ def minimax(asp: HeuristicAdversarialSearchProblem[GameState, Action], cutoff_de
         'states_expanded': 0 
     }
 
-    # TODO: Implement the minimax algorithm. Feel free to write helper functions.
+
 
     start = asp.get_start_state()
     stats['states_expanded'] += 1
@@ -156,7 +156,7 @@ def alpha_beta(asp: HeuristicAdversarialSearchProblem[GameState, Action], cutoff
         'states_expanded': 0  # Increase by 1 when get_available_actions is called on a state
     }
     
-    # TODO: Implement the alpha-beta pruning algorithm. Feel free to use helper functions.
+
     start = asp.get_start_state()
     stats['states_expanded'] += 1
     actions = asp.get_available_actions(start)
